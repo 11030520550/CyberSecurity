@@ -24,7 +24,6 @@ class Bus(Vehicle):
 bus_1 = Bus(100,30000)
 print(bus_1.max_speed, bus_1.mileage)
 
-#4. Define a class attribute (for the parent class) ”color” with a default value white. I.e., Every Vehicle should be white.
 print(bus_1.color)
 print(bus_1.seating_capacity())
 print(bus_1.seating_capacity(4))
