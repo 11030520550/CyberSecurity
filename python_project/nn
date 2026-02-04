@@ -1,7 +1,0 @@
-import requests
-from difflib import SequenceMatcher
-real = requests.get("https://github.com/login").text
-suspect = requests.get("https://fake-github.com/login").text
-ratio = SequenceMatcher(None, real, suspect).ratio()
-print("Similarity:", ratio)Lesson learned: Phishing pages can look 99% identical. Always check the URL.
-
